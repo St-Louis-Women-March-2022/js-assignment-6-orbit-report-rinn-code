@@ -1,6 +1,14 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	
+	<script>
+		function count_console() {
+			for (i = 0; i < satellite.length; i++) {
+				console.count();
+			}
+		}
+	</script>
+	<div>Total: <span class="counts-total">{{console.count}}</span></div>
 </div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
